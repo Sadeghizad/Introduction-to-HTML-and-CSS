@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Professional Portfolio Website" />
-  <title>John Doe | Web Developer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Advanced HTML Showcase</title>
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header class="header">
-    <h1>John Doe</h1>
-    <p>Frontend Developer & UI Designer</p>
-  </header>
-  <nav class="nav">
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div class="profile">
-    <img src="assets/images/pic.avif" alt="" style="border-radius: 256px; width: 256px;">  
-  </div>
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a passionate frontend developer with a love for clean and beautiful UI.
-      I enjoy turning complex problems into simple, elegant solutions. I always seek opportunities to learn new technologies and improve my craft.
-    </p>
-    <br>
-    <h3>Skills</h3>
-    <ul class="skills-list">
-      <li>HTML5 & CSS3</li>
-      <li>JavaScript (ES6+)</li>
-      <li>Responsive Web Design</li>
-      <li>Git & GitHub</li>
-      <li>Figma & Adobe XD</li>
-    </ul>
-  </section>
-  <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <table class="projects-table">
-      <thead>
-        <tr>
-          <th>Project</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>Portfolio Website</td>
-          <td>A personal website built using HTML, CSS, and JavaScript to showcase my skills.</td>
-        </tr>
-        <tr>
-          <td>Todo App</td>
-          <td>A responsive task management tool using vanilla JS with local storage support.</td>
-        </tr>
-        <tr>
-          <td>Weather Dashboard</td>
-          <td>Uses OpenWeather API to display weather forecasts for searched cities.</td>
-        </tr>
-      </tbody>
-    </table>
-  </section>
-  <section id="contact" class="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required />
-      <input type="text" placeholder="Your Email" required />
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
-  </section>
-  <footer class="footer">
-    <p>&copy; 2025 John Doe. All rights reserved.</p>
-  </footer>
+
+  <!-- Audio Lecture -->
+  <audio controls src="assets/lecture.mp4"></audio>
+
+  <!-- Downloadable Logo -->
+  <p>
+    <a href="files/logo.png" download="Logo">دانلود لوگو</a>
+  </p>
+
+  <!-- Event Date -->
+  <p>
+    Recorded on
+    <time datetime="2024-02-10T22:30">10:30 PM, Feb 10 2024</time>
+  </p>
+
+  <!-- Student Marks Table -->
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="3">Mark Smith</td>
+        <td>English</td>
+        <td>67</td>
+      </tr>
+      <tr>
+        <td>Maths</td>
+        <td>82</td>
+      </tr>
+      <tr>
+        <td>Science</td>
+        <td>91</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- Upcoming Event -->
+  <p>
+    Event will start
+    <time datetime="2024-03-12T15:30">Mar 12 2024, 3:30 PM</time>
+  </p>
+
+  <!-- Block Quote -->
+  <p>Here's a quotation:</p>
+  <blockquote cite="https://www.huxley.net/bnw/four.html">
+    Words can be like X-rays, if you use them properly—they’ll go through anything. You read and you’re pierced.
+  </blockquote>
+  <p>
+    — Aldous Huxley, <cite>Brave New World</cite>
+  </p>
+
+  <!-- Inline Quote -->
+  <p>
+    According to Mozilla:
+    <q cite="https://www.mozilla.org/en-US/about/history/details/">
+      Firefox 1.0 was released in 2004 and became a big success.
+    </q>
+  </p>
+
+  <!-- Contact Info -->
+  <address>
+    Azadi<br />
+    Tehran, Iran<br />
+    Tel: 01234 567 890<br />
+    Email: <a href="mailto:me@quera.org">me@quera.org</a>
+  </address>
+
+  <!-- Character Entities -->
+  <p>
+    Hello &quot;Ali&quot; &amp; &quot;Zahra&quot;, this is a &lt;h1&gt; tag.<br />
+    &copy; &trade; — <a href="https://html.spec.whatwg.org/multipage/named-characters.html#named-character-references">
+      named entities reference
+    </a>
+  </p>
+
+  <!-- Video Lecture with Poster & Fallback -->
+  <video controls
+         src="assets/lecture.mp4"
+         poster="assets/poster.png">
+    مرورگر قادر به پخش ویدئو نیست.
+  </video>
+
 </body>
 </html>
